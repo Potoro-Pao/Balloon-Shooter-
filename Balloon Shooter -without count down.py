@@ -19,7 +19,7 @@ colors = [(255, 0, 0), (20, 123, 200), (84, 255, 159), (132, 112, 255), (255, 21
 def wrap_position(position, screen):
     x, y = position
     w, h = screen.get_size()
-    return Vector2(x % w, y % h)  # can let ship appear on the opposite side of the screen
+    return Vector2(x % w, y % h)  # this will let the balloon re-appear on the opposite side of its direction.
 
 def display_win():
     pygame.font.init()
